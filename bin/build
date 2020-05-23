@@ -1,0 +1,13 @@
+#!/bin/bash
+# This just builds the docker image
+set -euo pipefail
+: "${PACKAGECLOUD_TOKEN?Expected PACKAGECLOUD_TOKEN}"
+IMAGE_NAME='qa-automation-drt-haw'
+
+main() {
+  echo "Building image $IMAGE_NAME..."
+# Building the docker image while passing PACKAGECLOUD_TOKEN setting up by 'export PACKAGECLOUD_TOKEN=<>'
+  docker build --build-arg PACKAGECLOUD_TOKEN -t "$IMAGE_NAME" .
+}
+
+main "$@"

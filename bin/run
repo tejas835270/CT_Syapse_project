@@ -1,0 +1,24 @@
+#!/bin/bash
+
+SOURCE_DIR="$(dirname "$0")"
+readonly container_name="qa-automation-drt-haw"
+#readonly container_name="141380700111.dkr.ecr.us-west-2.amazonaws.com/qa-automation-drt-haw:latest"
+main() {
+    # docker image buildup with the Dockerfile in the repo by calling the build command >> donot need to build it every time
+    # sh "$SOURCE_DIR/build"
+    # after building the docker image, run the docker-entrypoint.sh in the container and creates mount vol 'qa_reports' in the docker host
+    if [[ -z "$JENKINS_URL" ]]; then
+        echo "Local Working directory: $(pwd)"
+        local docker_host_ip=$(docker run --rm -it \
+        azukiapp/dig dig +short host.docker.internal)
+        docker run -v "$(pwd)/qa_reports":/srv/qa_reports \
+          --add-host="localhost:$docker_host_ip" \
+          "$container_name" "$@"
+    else
+        echo "/bin/run JENKINS"
+        docker run -v "$(pwd)/qa_reports":/srv/qa_reports \
+          "$container_name" "$@"
+    fi
+}
+
+main "$@"

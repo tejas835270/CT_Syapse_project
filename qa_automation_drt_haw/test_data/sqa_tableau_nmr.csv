@@ -1,0 +1,4 @@
+sr,username,password,org,date
+1,tableau_hfhs_username,tableau_hfhs_password,"hfhs-sqa/views/NewMolecularResults/NewMolecularResults?:embed=y#1","02/27/2020"
+2,tableau_aurora_username,tableau_aurora_password,"aurora-sqa/views/NewMolecularResults/NewMolecularResults?:embed=y#1","02/06/2020"
+3,tableau_pma_username,tableau_pma_password,"pma-sqa/views/NewMolecularResults/NewMolecularResults?:embed=y#1","02/28/2020"

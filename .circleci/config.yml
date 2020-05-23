@@ -1,0 +1,26 @@
+version: 2
+
+jobs:
+  docker-build:
+    docker:
+      - image: ${DOCKER_BUILD_IMAGE}
+    steps:
+      - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - run:
+          name: Build image
+          command: build --build-arg PACKAGECLOUD_TOKEN
+      - run:
+          name: Push image
+          command: push
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - docker-build:
+          context: aws-ecr-prod
+          filters:
+            tags:
+              only: /.*/

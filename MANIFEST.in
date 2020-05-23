@@ -1,0 +1,6 @@
+include *.md
+include setup.cfg
+include setup.py
+recursive-include qa_automation_drt_haw *.py
+recursive-include qa_automation_drt_haw *.yaml
+recursive-include tests *.py

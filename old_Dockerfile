@@ -1,0 +1,86 @@
+FROM python:3.7
+
+LABEL service="qa-automation-drt-haw" \
+      team="qa"
+
+ENV PATH=$PATH:/home/user/.local/bin \
+   PYTHONFAULTHANDLER=1 \
+   PYTHONUNBUFFERED=1 \
+   PIP_DISABLE_PIP_VERSION_CHECK=on \
+   PIPENV_COLORBLIND=true \
+   PIPENV_NOSPIN=true \
+   PIP_NO_CACHE_DIR=off \
+   PIP_USER=1
+
+# Run as non root user (best practice)
+WORKDIR /srv
+
+# install google chrome
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+RUN apt-get -y update
+RUN apt-get install -y google-chrome-stable
+
+# install chromedriver
+RUN apt-get install -yqq unzip
+RUN wget -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/75.0.3770.90/chromedriver_linux64.zip
+RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
+RUN chmod 777 /usr/local/bin/chromedriver
+RUN chmod 777 /usr/bin/google-chrome
+
+# Install OpenJDK-8
+RUN apt-get -y update && \
+    apt-get install -y openjdk-11-jdk && \
+    apt-get install -y ant && \
+    apt-get clean
+
+# Fix certificate issues
+RUN apt-get update && \
+    apt-get install ca-certificates-java && \
+    apt-get clean && \
+    update-ca-certificates -f
+# Setup JAVA_HOME -- useful for docker commandline
+ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64/
+RUN export JAVA_HOME
+RUN java -version
+
+# install allure server
+ARG RELEASE=2.12.0
+ARG ALLURE_REPO=https://dl.bintray.com/qameta/maven/io/qameta/allure/allure-commandline
+
+RUN wget --no-verbose -O /tmp/allure-$RELEASE.zip $ALLURE_REPO/$RELEASE/allure-commandline-$RELEASE.zip \
+ && unzip /tmp/allure-$RELEASE.zip -d / \
+ && rm -rf /tmp/*
+
+ENV ALLURE_HOME=/allure-$RELEASE
+ENV PATH=$PATH:$ALLURE_HOME/bin
+ENV RESULTS_DIRECTORY=/app/allure-results
+ENV REPORT_DIRECTORY=/app/allure-report
+RUN allure --version
+RUN apt-get -y update
+
+# set display port to avoid crash
+ENV DISPLAY=:99
+
+# Run as a non-root user.
+RUN useradd -ms /bin/bash user \
+&& chown -R user:user /srv
+USER user
+
+# Copy required project files into the WORKDIR.
+COPY --chown=user:user Pipfile* setup.py setup.cfg /srv/
+
+# Create a dummy service directory for the dependency installation.
+RUN mkdir -p /srv/qa_automation_drt_haw
+
+ARG PACKAGECLOUD_TOKEN
+RUN python -m pip install --upgrade --user pip setuptools
+COPY --chown=user:user setup.py setup.cfg /srv/
+RUN mkdir -p /srv/qa_automation_haw
+RUN pip install /srv --no-cache-dir --extra-index-url "https://${PACKAGECLOUD_TOKEN}:@packagecloud.io/syapse/General/pypi/simple"
+
+# Copy the entrypoint files for booting the application.
+COPY --chown=user:user docker-entrypoint.sh /srv/
+
+# Set the command executed first when the container run
+ENTRYPOINT ["./docker-entrypoint.sh"]

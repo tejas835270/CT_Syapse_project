@@ -1,0 +1,1061 @@
+{
+   "dev_db_conn":
+   {
+       "minerva": {
+      "database": "postgres",
+      "user": "postgres",
+      "password": "v0FOGYbgcpddYb8HCCzPRb9BThmG4HKXXWG/Bwgsz0UZy1OBLVrwH7oS9bfTjU+lmjslygCPXAFt2xS22lyxqQ==",
+      "host": "minerva-dev.cheqtts362c0.us-west-2.rds.amazonaws.com",
+      "port": "5432"
+    },
+    "flatstore": {
+     "database": "postgres",
+      "user": "postgres",
+      "password": "v0FOGYbgcpddYb8HCCzPRb9BThmG4HKXXWG/Bwgsz0XUx1rEbGhmvfaHZeE+uMXQPQk4C51pNvJCUDRnGbU6EQ==",
+      "host": "flatstore-patient-dev.cheqtts362c0.us-west-2.rds.amazonaws.com",
+      "port": "5432"
+    },
+    "mdx_service": {
+      "database": "mdx_service",
+      "user": "postgres",
+      "password": "v0FOGYbgcpddYb8HCCzPReyDUcbbZ2aFFM23u1OJzYskskbr4KiY4HbDdLscueFzD6ik7cUBfUP7wnJhmYAuKQ==",
+      "host": "mdx-redux-dev.cheqtts362c0.us-west-2.rds.amazonaws.com",
+      "port": "5432"
+    },
+    "file_service": {
+      "database": "postgres",
+      "user": "postgres",
+      "password": "v0FOGYbgcpddYb8HCCzPRb9BThmG4HKXXWG/Bwgsz0W0xrylrsWWTzCBRFdOVzJVAQEYNPhKlyJiSCaFYfjCVw==",
+      "host": "fileservice-dev.cheqtts362c0.us-west-2.rds.amazonaws.com",
+      "port": "5432"
+    }
+   },
+   "sqa_db_conn":
+   {
+       "minerva": {
+         "database": "postgres",
+         "user": "postgres",
+         "password": "ncbN35Uv2GJfsIzb+4Tkt53Gzd+VL9hiX7CM2/uE5LcxYcWVEG+BjC2FmkPi8iUvW6eMeXWqW5uKBh755HFe6Q==",
+          "host": "minerva-sqa.czsq80p56jgd.us-west-2.rds.amazonaws.com",
+         "port": "5432"
+       },
+       "flatstore": {
+        "database": "postgres",
+         "user": "postgres",
+         "password": "ncbN35Uv2GJfsIzb+4Tkt53Gzd+VL9hiX7CM2/uE5LfbT4Cxr/risiJWLz34+h2l+1A70VDZuiyl3mCTSmv36g==",
+          "host": "flatstore-patient-sqa.czsq80p56jgd.us-west-2.rds.amazonaws.com",
+         "port": "5432"
+       },
+       "mdx_service": {
+         "database": "",
+         "user": "",
+         "password": "",
+          "host": "",
+         "port": ""
+       },
+       "file_service": {
+         "database": "",
+         "user": "",
+         "password": "",
+          "host": "",
+         "port": ""
+       }
+
+   },
+   "patients":
+      {
+         "patient_info": {
+            "first_name": "Carlos",
+            "last_name": "Johnson",
+            "info": {
+               "MRN": "2840202848",
+               "DOB": "Dec 27, 1979",
+               "Sex": "Male"
+            }},
+
+            "patient1": {
+               "first_name": "Bobbie",
+               "last_name": "CTPMOlaparib"
+            },
+
+            "patient2": {
+               "first_name": "Delco",
+               "last_name": "Syapse"
+            },
+            "patient3": {
+               "first_name": "tim"
+            },
+            "patient4": {
+               "first_name": "mark",
+               "last_name": "fin"
+            },
+            "patient_without_vital_status": {
+               "first_name": "Jones",
+               "last_name": "Christy"
+            },
+           "patient_cancer_diagnosis": {
+                  "first_name": "Bobbie",
+                  "last_name": "CTPMOlaparib"
+            },
+
+           "patient_radiation": {
+                  "first_name": "Delco",
+                  "last_name": "Syapse"
+            },
+
+
+           "patient_genomic_alterations": {
+                  "first_name": "Allison",
+                  "last_name": "Kramer"
+            },
+
+            "patient_program_management": {
+                  "first_name": "Clara",
+                  "last_name": "Fin"
+            },
+
+            "patient_surgery": {
+                  "first_name": "Bridgeport",
+                  "last_name": "Syapse"
+            },
+
+            "patient_status": {
+                  "first_name": "Diane",
+                  "last_name": "Fin"
+            },
+
+            "patient_status2": {
+                  "first_name": "Bob",
+                  "last_name": "CTPMVismodegib"
+            },
+
+            "patient_systematic_therapy": {
+                  "first_name": "WithDOD",
+                  "last_name": "Report"
+            },
+
+           "patient_with_deceased_status": {
+              "first_name": "Kidder",
+              "last_name": "SYAPSE",
+              "info": {
+                 "MRN": "66-99-80-1",
+                 "DOB": "Jun 2, 1945",
+                 "Sex": "Female",
+                 "Deceased": "Aug 2, 2016"
+              }},
+
+           "patient_with_mrn_info1": {
+              "first_name": "Samantha",
+              "last_name": "Bishop",
+              "info": {
+                 "MRN": "7726306831",
+                 "DOB": "1995-12-07",
+                 "Sex": "Female"
+              }},
+           "patient_with_mrn_info2": {
+              "first_name": "Aaliyah",
+              "last_name": "TAPUR_Inclusion_ICD_code_85_90",
+              "info": {
+                 "MRN": "69583794",
+                 "DOB": "1975-09-01",
+                 "Sex": "Male"
+              }},
+
+           "patient_prep_data_deceased": {
+              "first_name": "Aline",
+              "last_name": "Sim",
+              "prep_data": {
+                 "Vital Status": "Deceased",
+                 "Date of death": "Jan 25, 2009"
+              }},
+
+           "patient_prep_data_cancer": {
+              "first_name": "Adalyn",
+              "last_name": "TAPUR_Inclusion_ICD_code_85_90",
+              "prep_data": {
+                 "Diagnosis Date": "Mar 3, 2017",
+                 "Primary Site": "Cerebrum",
+                 "Histology": "Hodgkin lymphoma, lymphocyte depletion, diffuse fibrosis",
+                 "Clinical stage": "T1b1 N3c M1e IIIa",
+                 "Pathologic stage": "T1a1 N3 M1c IIIa",
+                 "Data Source": ""
+              },
+              "cancer_diagnosis":{
+                  "Diagnosis Date":"Mar 03, 2017",
+                  "Primary Site": "Cerebrum",
+                  "Histology": "Hodgkin lymphoma, lymphocyte depletion, diffuse fibrosis",
+                  "cT": "T1b1",
+                  "cN": "N3c",
+                  "cM": "M1e",
+                  "Clinical stage group": "IIIa",
+                  "pT": "T1a1",
+                  "pN": "N3",
+                  "pM": "M1c",
+                  "Pathologic stage group": "IIIa"
+              }
+             },
+
+           "patient_prep_data_alive": {
+              "first_name": "Paris",
+              "last_name": "Example",
+              "prep_data": {
+                 "Vital Status": "Alive"
+              }},
+            "patients_for_finder_test": {
+              "Patient1": "joh",
+              "Patient2": "지최주 제갈음",
+              "Patient3": "alan",
+              "Patient4": "6173016306",
+              "Patient5": "delila",
+              "Patient6": "CTPMRegorafenib",
+              "Patient7": "Abbaa sim",
+              "Patient8": "abcd1234abcd1234",
+              "Patient9": "aBbAa sIM"
+              }
+         },
+
+   "users_dev":{
+         "chronicle":{
+            "username": "somethingchronicle@example.com",
+            "password": "test",
+            "first_name": "Elle",
+            "last_name": "Chronic",
+            "full_name": "Chronic Elle"
+         },
+         "portal_2_roles":{
+            "username": "syapsemain+api@gmail.com",
+            "password": "v0FOGYbgcpddYb8HCCzPRb9BThmG4HKXXWG/Bwgsz0W/QU4ZhuByl11hvwcILM9F4H3w8RFZ+iQDBIpo4WeymA==",
+            "userId": "v0FOGYbgcpddYb8HCCzPRb9BThmG4HKXXWG/Bwgsz0UVwN8X3yQvwfxZc9DrbUibHaiXAoP8ksgmpLb+UEj3mg==",
+            "first_name": "API",
+            "last_name": "Syapse",
+            "full_name": "API Syapse",
+            "roles": [
+                {
+                  "name": "oncology-web-chronicle",
+                  "service_name": "Patient Data Entry"
+                },
+                {
+                  "name": "mtb-web",
+                  "service_name": "Molecular Tumor Board Manager"
+                },
+                {
+                  "name": "mdx-web",
+                  "service_name": "Patient Finder"
+                },
+                {
+                  "name": "portal-url-auth-patient-cohort-builder",
+                  "service_name": "Cohort Builder"
+                },
+                {
+                  "name": "portal-url-auth-executive-dashboard",
+                  "service_name": "Program Insights"
+                },
+                {
+                  "name": "portal-url-auth-biomarker-testing-insights",
+                  "service_name": "Biomarker Testing Insights"
+                }
+            ]
+         },
+         "portal_chronicle":{
+            "username": "syapsemain+portal_chronicle@gmail.com",
+            "password": "v0FOGYbgcpddYb8HCCzPRb9BThmG4HKXXWG/Bwgsz0W/QU4ZhuByl11hvwcILM9F4H3w8RFZ+iQDBIpo4WeymA==",
+            "first_name": "Chronicle",
+            "last_name": "Syapse",
+            "full_name": "Chronicle Syapse",
+            "roles": [
+                {
+                  "name": "Chronicle Editor",
+                  "service_name": "Patient Data Entry"
+                }
+            ]
+         },
+         "portal_no_roles":{
+            "username": "syapsemain+portal_no_roles@gmail.com",
+            "password": "v0FOGYbgcpddYb8HCCzPRb9BThmG4HKXXWG/Bwgsz0W/QU4ZhuByl11hvwcILM9F4H3w8RFZ+iQDBIpo4WeymA==",
+            "first_name": "NoRoles",
+            "last_name": "Syapse",
+            "full_name": "NoRoles Syapse",
+            "roles":[]
+         },
+         "tableau_executive_only":{
+            "username": "syapsemain.tableau@gmail.com",
+            "password": "v0FOGYbgcpddYb8HCCzPRb9BThmG4HKXXWG/Bwgsz0W/QU4ZhuByl11hvwcILM9F4H3w8RFZ+iQDBIpo4WeymA==",
+            "first_name": "syapsemain ",
+            "last_name": "Tableauonly",
+            "full_name": "syapsemain Tableauonly",
+            "roles": [
+                {
+                  "name": "Executive Insights",
+                  "service_name": "Executive"
+                }
+            ]
+         },
+         "mtb_testing_only":{
+	        "username": "syapsemain+api@gmail.com",
+            "password": "v0FOGYbgcpddYb8HCCzPRb9BThmG4HKXXWG/Bwgsz0W/QU4ZhuByl11hvwcILM9F4H3w8RFZ+iQDBIpo4WeymA==",
+            "first_name": "syapsemain ",
+            "last_name": "mtbcasemgmttest",
+            "full_name": "syapsemain mtbtesting",
+            "roles": [
+                {
+                  "name": "Molecular Tumor Board Coordinator",
+                  "service_name": "Molecular Tumor Board Manager"
+                }
+            ]
+         },
+
+          "invalid_user_data": {
+            "invalid_username": "syapse+invalid@gmail.com",
+            "invalid_pwd": "invalid"
+          },
+          "org_clinicalanalyst": {
+            "org_clinicalanalyst_username": "syapsemain.clinicalanalyst@gmail.com"
+          },
+          "Suborg_clinicalanalyst": {
+            "suborg_clinicalanalyst_username": "2nd.chance.clinic.clinicalanalyst@gmail.com"
+          },
+          "tableau_aurora":{
+            "first_name": "Automation ",
+            "last_name": "mtbcasemgmttest",
+            "full_name": "Testing",
+            "roles": [
+                {
+                  "name": "Cohort Builder",
+                  "service_name": "Cohort Builder"
+                }
+            ]
+         },
+          "tableau_pma":{
+            "first_name": "Automation ",
+            "last_name": "mtbcasemgmttest",
+            "full_name": "Testing",
+            "roles": [
+                {
+                  "name": "Cohort Builder",
+                  "service_name": "Cohort Builder"
+                }
+            ]
+         },
+          "tableau_HFHS_patient_cohort":{
+            "first_name": "Automation ",
+            "last_name": "mtbcasemgmttest",
+            "full_name": "Testing",
+            "roles": [
+                {
+                  "name": "Cohort Builder",
+                  "service_name": "Cohort Builder"
+                }
+            ]
+         },
+          "tableau_CHI_MERCY_HEALTH_patient_cohort":{
+            "first_name": "Automation ",
+            "last_name": "mtbcasemgmttest",
+            "full_name": "Testing",
+            "roles": [
+                {
+                  "name": "Cohort Builder",
+                  "service_name": "Cohort Builder"
+                }
+            ]
+         },
+     "org_cases": {
+                  "integration2": "f6d3d333-5c1e-467a-96ac-7b1d068d26ec"
+                },
+     "org_token": {
+                  "integration2_file_token": "252d0685-04e5-4530-bb20-332f47bff2ce"
+                },
+     "api_auth_details": {
+       "client_id": "Y4EF4s3mw3IvLKFUUggL9Xgz64g0pH6h",
+       "client_secret": "5IWpL62TTZlCvMBR2Le4pNB9wN09kwpYzjlvIHgjMy71KEgVCrhzYVfJHcom-Rt4"
+     }
+ },
+
+   "users_sqa":{
+
+                "tableau_chi":{
+                  "username": "",
+                  "password": ""
+                },
+                "tableau_hfhs": {
+                  "username": "tableauviews+cohort_hfhs@gmail.com",
+                  "password": "ncbN35Uv2GJfsIzb+4Tkt53Gzd+VL9hiX7CM2/uE5Ledxs3flS/YYl+wjNv7hOS3+fWiJ+UG18gAHmW2i7xP8Q=="
+                },
+                "tableau_pma":{
+                  "username": "tableauviews+cohort_pma@gmail.com",
+                  "password": "ncbN35Uv2GJfsIzb+4Tkt53Gzd+VL9hiX7CM2/uE5Ledxs3flS/YYl+wjNv7hOS3+fWiJ+UG18gAHmW2i7xP8Q=="
+                },
+                "tableau_aurora":{
+                  "username": "tableaucohortbuilder@gmail.com",
+                  "password": "ncbN35Uv2GJfsIzb+4Tkt53Gzd+VL9hiX7CM2/uE5Ledxs3flS/YYl+wjNv7hOS3+fWiJ+UG18gAHmW2i7xP8Q=="
+                },
+                "tableau_executive_only": {
+                  "username": "syapsemain.tableau@gmail.com",
+                  "password": "ncbN35Uv2GJfsIzb+4Tkt53Gzd+VL9hiX7CM2/uE5Ledxs3flS/YYl+wjNv7hOS3+fWiJ+UG18gAHmW2i7xP8Q=="
+                },
+                "portal_2_roles":{
+                  "username": "tableauviews+chi_mercy_health@gmail.com",
+                  "password": "ncbN35Uv2GJfsIzb+4Tkt53Gzd+VL9hiX7CM2/uE5Ledxs3flS/YYl+wjNv7hOS3+fWiJ+UG18gAHmW2i7xP8Q==",
+                  "userId": ""
+                },
+                "portal_chronicle": {
+                  "username": "tableaucohortbuilder@gmail.com",
+                  "password": "ncbN35Uv2GJfsIzb+4Tkt53Gzd+VL9hiX7CM2/uE5Ledxs3flS/YYl+wjNv7hOS3+fWiJ+UG18gAHmW2i7xP8Q=="
+                },
+                "portal_no_roles": {
+                  "username": "tableaucohortbuilder@gmail.com",
+                  "password": "ncbN35Uv2GJfsIzb+4Tkt53Gzd+VL9hiX7CM2/uE5Ledxs3flS/YYl+wjNv7hOS3+fWiJ+UG18gAHmW2i7xP8Q=="
+                },
+                "mtb_testing_only": {
+                  "username": "tableaucohortbuilder@gmail.com",
+                  "password": "ncbN35Uv2GJfsIzb+4Tkt53Gzd+VL9hiX7CM2/uE5Ledxs3flS/YYl+wjNv7hOS3+fWiJ+UG18gAHmW2i7xP8Q=="
+                },
+                "PSJH": {
+                  "username": "",
+                  "password": ""
+                },
+                "CHI_H": {
+                  "username": "",
+                  "password": ""
+                },
+                "CHI_F": {
+                  "username": "",
+                  "password": ""
+                },
+                 "org_cases": {
+                  "integration2": ""
+                },
+                "org_token": {
+                  "integration2_file_token": ""
+                },
+                "api_auth_details": {
+                   "client_id": "3duD79tdV4baW0XOvNouz6MQxrcpBoBm",
+                   "client_secret": "YPHevDIm/FVs77mMY4O2Y3WRQ7/kOU/lI1/LKJvj3MKuOuGBs0hwpT5ASRvL5YNIvOfE7HL0LQcjwGlHAIUmSw=="
+                 }
+   },
+
+
+  "org_cases": {
+    "integration2": "f6d3d333-5c1e-467a-96ac-7b1d068d26ec"
+  },
+   "dev": {
+     "case_with_attachments": {
+       "case_url": "https://mtb.dev.syapse.com/case/618b27bd-c9a5-4748-ba32-2c0c29e8aa78"
+     },
+     "auto_report_patient_mrn" : "15118",
+     "patient_search": "Joh"
+   },
+   "sqa":{
+     "case_with_attachments":{
+       "case_url":"https://mtb-sqa.syapse.com/case/8219c02a-989a-4a08-87c7-7415e00533d1"
+     },
+     "auto_report_patient_mrn" : "",
+     "patient_search": "Joh"
+   },
+
+  "service_names": {
+    "PDS": "Patient Data Entry",
+    "MTB": "Molecular Tumor Board"
+  },
+   "chronicle_fields_test_data": {
+
+     "Chronicle_Systemic_Therapy_data": {
+       "Regimen": "Docetaxel-Gemcitabine",
+       "Start Date": "Feb 11, 2018",
+       "End Date": "May 07, 2018",
+       "Agent/drug": "docetaxel",
+       "Purpose of Treatment": "Curative",
+       "Timing of chemotherapy related to other treatments": "Coordinated after surgery (adjuvant)",
+       "Best response": "PR - Partial Response",
+       "Last best response date": "May 07, 2018",
+       "Reason for treatment change/stop": "Toxicity",
+       "Date of progression/recurrence": "Jun 07, 2018",
+       "Time to progression/recurrence": "Jul 12, 2018",
+       "Toxi-category": "Agitation",
+       "CTCAE": "3 - Severe",
+       "Treatment/Summary complete?": "Yes"
+     },
+     "Chronicle_Systemic_Therapy1_data": {
+       "Regimen": "AD (Adriamycin-Dacarbazine",
+       "Start Date": "Mar 11, 2018",
+       "End Date": "Apr 11, 2018",
+       "Purpose of Treatment": "Palliative",
+       "Timing of chemotherapy related to other treatments": "Coordinated after surgery (adjuvant)",
+       "Best response": "NED - No Evidence of Disease",
+       "Last best response date": "Apr 07, 2018",
+       "Reason for treatment change/stop": "Patient decision",
+       "Date of progression/recurrence": "Jun 14, 2018",
+       "Time to progression/recurrence": "Jul 11, 2018",
+       "Toxi-category": "Abdominal soft tissue necrosis",
+       "CTCAE": "4 - Life-threatening",
+       "Treatment/Summary complete?": "Yes"
+     },
+     "Chronicle_Systemic_Therapy1_data_changes": {
+       "Regimen": "Docetaxel-Gemcitabine",
+       "Start Date": "Mar 13, 2018",
+       "End Date": "Apr 11, 2018",
+       "Purpose of Treatment": "Curative",
+       "Timing of chemotherapy related to other treatments": "Coordinated after surgery (adjuvant)",
+       "Best response": "PR - Partial Response",
+       "Last best response date": "Apr 08, 2018",
+       "Reason for treatment change/stop": "Patient decision",
+       "Date of progression/recurrence": "Jun 15, 2018",
+       "Time to progression/recurrence": "Jul 12, 2018",
+       "Toxi-category": "Agitation",
+       "CTCAE": "4 - Life-threatening",
+       "Treatment/Summary complete?": "Yes"
+     },
+       "Chronicle_Systemic_Therapy_no_data": {
+       "Regimen": "",
+       "Start Date": "",
+       "End Date": "",
+         "Agent/drug": "",
+       "Purpose of Treatment": "",
+       "Timing of chemotherapy related to other treatments": "",
+       "Best response": "",
+       "Last best response date": "",
+       "Reason for treatment change/stop": "",
+       "Date of progression/recurrence": "",
+       "Time to progression/recurrence": "",
+       "Toxi-category": "",
+       "CTCAE": "",
+       "Treatment/Summary complete?": ""
+     },
+      "only_regiment_agent_value": {
+        "Regimen": "test regiment",
+        "Agent/drug": "TEST DRUG"
+      },
+
+     "vocab_data_for_Systemic_Therapy":{
+        "regimen": "Regimen.csv",
+        "agentOrDrug": "AgentDrug.csv",
+        "bestResponse": "Best_response.csv",
+        "toxiCategory": "Toxi_category.csv"
+     },
+
+     "Chronicle_Cancer_Surgery1_data": {
+       "Cancer surgery date": "Aug 05, 2015",
+       "Cancer surgery type/name": "test type",
+       "Purpose of surgery": "Curative",
+       "Local treatment outcome": "R2"
+     },
+     "Chronicle_Cancer_Surgery2_data": {
+       "Cancer surgery date": "Aug 15, 2015",
+       "Cancer surgery type/name": "Surgery1",
+       "Purpose of surgery": "Diagnostic",
+       "Local treatment outcome": "R0",
+       "Comments": "Comment  1 for Surgery"
+     },
+      "Chronicle_Cancer_Surgery3_data": {
+       "Cancer surgery date": "Aug 20, 2015",
+       "Cancer surgery type/name": "New Surgery",
+       "Purpose of surgery": "Curative",
+       "Local treatment outcome": "R2",
+       "Comments": "Modified comment  1 for Surgery"
+     },
+      "Chronicle_Cancer_Surgery4_data": {
+       "Cancer surgery date": "Jun 20, 2016",
+       "Cancer surgery type/name": "Surgery2",
+       "Purpose of surgery": "Curative",
+       "Local treatment outcome": "R1",
+       "Comments": "Comment Surgery Section 2"
+     },
+       "Chronicle_Cancer_Surgery5_data": {
+       "Cancer surgery date": "Aug 20, 2016",
+       "Cancer surgery type/name": "Surgery3",
+       "Purpose of surgery": "Diagnostic",
+       "Local treatment outcome": "R0",
+       "Comments": "Comment Surgery Section 3"
+     },
+      "Chronicle_Cancer_Surgery_no_data": {
+       "Cancer surgery date": "",
+       "Cancer surgery type/name": "",
+       "Purpose of surgery": "Select...",
+       "Local treatment outcome": "Select...",
+       "Comments": ""
+     },
+     "Chronicle_Vital_Status_data": {
+        "Vital Status":"Alive",
+        "Date of death": "",
+        "Date of last contact":"",
+        "Data Source": "Select...",
+        "Cause of death": "Select...",
+       "Comments": ""
+     },
+        "Chronicle_Vital_Status_data2": {
+        "Vital Status":"Deceased",
+        "Date of death": "",
+        "Date of last contact":"",
+        "Cause of death": "Select..."
+     },
+     "Chronicle_Vital_Status_data3": {
+        "Vital Status":"Deceased",
+        "Date of death": "",
+        "Date of last contact":"",
+        "Cause of death": "Select..."
+     },
+     "Chronicle_Vital_Status_data4": {
+        "Vital Status":"Alive",
+        "Date of death": "",
+        "Date of last contact":"Aug 29, 2018",
+        "Cause of death": "Select..."
+     },
+      "Chronicle_Vital_Status_data5": {
+        "Vital Status":"Alive",
+        "Date of death": "",
+        "Date of last contact":"Aug 11, 2018",
+        "Cause of death": "Select..."
+     },
+     "Chronicle_Vital_Status_data6": {
+       "Vital Status": "Deceased",
+       "Date of last contact": "",
+       "Date of death": "",
+       "Cause of death": "Select...",
+       "Data Source": "Select...",
+       "Comments": ""
+     },
+       "Chronicle_Vital_Status_data7": {
+       "Date of last contact": "",
+       "Date of death": "",
+       "Cause of death": "Select...",
+       "Data Source": "Select...",
+       "Comments": ""
+     },
+     "Chronicle_Vital_Status_data8": {
+       "Date of last contact": "Mar 01, 2018",
+       "Date of death": "Apr 01, 2016",
+       "Cause of death": "Non-cancer",
+       "Data Source": "Swedish Breast Cancer Registry",
+       "Comments": "Comment for Vital status section"
+     },
+       "Chronicle_Vital_Status_data9": {
+       "Date of last contact": "Mar 30, 1999",
+       "Date of death": "Feb 11, 2010",
+       "Cause of death": "Cancer",
+       "Data Source": "PMRP",
+       "Comments": "Comment not for saving"
+     },
+      "Chronicle_Vital_Status_data10": {
+        "Vital Status": "Deceased",
+        "Date of death": "Jul 20, 2013",
+        "Date of last contact":"Sep 20, 2011"
+      },
+      "Chronicle_Vital_Status_no_data": {
+        "Vital Status":"",
+        "Date of death": "",
+        "Date of last contact":"",
+        "Cause of death": "Select..."
+     },
+     "Chronicle_Vital_Status_no_data2": {
+        "Date of death": "",
+        "Date of last contact":"",
+        "Cause of death": "Select...",
+        "Comments": ""
+     },
+      "Chronicle_Vital_Status_Alive_Only": {
+        "Vital Status":"Alive"
+     },
+     "Chronicle_Disease_Status_data1":{
+       "Disease status date": "Apr 20, 2010",
+       "Disease Status": "Alive, no evidence of disease (ANED)",
+       "Extent of disease": "Local disease",
+       "Comments": "Disease status comment not for saving"
+     },
+     "Chronicle_Disease_Status_data2":{
+       "Disease status date": "Apr 20, 2010",
+       "Disease Status": "Alive, no evidence of disease (ANED)",
+       "Extent of disease": "Local disease",
+       "Distant metastasis or recurrence sites": "Intrapelvic Lymph Nodes",
+       "Comments": "Disease status comment not for saving"
+     },
+     "Chronicle_Disease_Status_data3":{
+       "Disease status date": "Jun 19, 2011",
+       "Disease Status": "Alive with disease (AWD)",
+       "Extent of disease": "Distant metastatic disease",
+       "Distant metastasis or recurrence sites": "Other Respiratory Organs",
+       "Comments": "Disease status comment for section 2"
+     },
+      "Chronicle_Disease_Status_data4":{
+        "Disease status date": "Feb 02, 2009",
+        "Disease Status": "Alive with disease (AWD)",
+        "Comments": "Modified comment for section 1"
+     },
+
+     "Chronicle_Disease_Status_data5":{
+        "Disease status date": "Feb 02, 2009",
+        "Disease Status": "Alive with disease (AWD)",
+        "Extent of disease": "Local disease",
+        "Distant metastasis or recurrence sites": "Other Digestive Organs and Spleen",
+        "Comments": "Modified comment for section 1"
+     },
+     "Chronicle_Disease_Status_no_data":{
+        "Disease status date": "",
+        "Disease Status": "Select...",
+        "Extent of disease": "Select...",
+        "Comments": ""
+     },
+
+     "Distant_metastasis_data1": {
+       "Distant metastasis or recurrence sites": "Other Respiratory Organs, Other Digestive Organs and Spleen, Other Parts of Nervous System"
+     },
+     "Distant_metastasis_data2": {
+       "Distant metastasis or recurrence sites": "Other Digestive Organs and Spleen"
+     },
+     "Distant_metastasis_data3": {
+       "Distant metastasis or recurrence sites": "Breast"
+     },
+     "Distant_metastasis_custom_value": {
+       "Distant metastasis or recurrence sites": "Custom value 1, Custom value 2"
+     },
+
+     "Distant_metastasis_value1": "Other Respiratory Organs",
+     "Distant_metastasis_value2": "Other Digestive Organs and Spleen",
+     "Distant_metastasis_value3": "Other Parts of Nervous System",
+     "Distant_metastasis_value4": "Breast",
+     "Distant_metastasis_custom_value1": "Custom value 1",
+     "Distant_metastasis_custom_value2": "Custom value 2",
+
+     "Extent_of_disease_value1": "Distant metastatic disease",
+     "Extent_of_disease_value2": "Regional disease",
+     "Extent_of_disease_value3": "Local disease",
+     "Extent_of_disease_value4": "Breast",
+     "Extent_of_disease_custom_value1": "Custom value 1",
+     "Extent_of_disease_custom_value2": "Custom value 2",
+
+     "Extent_of_disease_data1": {
+        "Extent of disease": "Distant metastatic disease, Regional disease, Local disease"
+     },
+     "Extent_of_disease_data2": {
+        "Extent of disease": "Distant metastatic disease, Local disease"
+     },
+     "Extent_of_disease_data3": {
+        "Extent of disease": "Distant metastatic disease, Distant metastatic disease, Local disease"
+     },
+     "Extent_of_disease_data4": {
+        "Extent of disease": "Local disease"
+     },
+     "Chronicle_genomic_alterations_data1":{
+        "Report Result Date": "Oct 11, 2018",
+        "Specimen Collection Date": "Oct 07, 2018",
+        "Sample Type": "Distant metastases",
+        "Test Name": "Foundation",
+        "Test Type": "FoundationOne",
+        "Comments": "New comment for Genomic Alterations"
+     },
+
+
+     "Chronicle_genomic_alterations_data2":{
+        "Report Result Date": "Mar 09, 2018",
+        "Specimen Collection Date": "Mar 01, 2018",
+        "Sample Type": "Recurrence",
+        "Test Name": "NGS",
+        "Test Type": "NGS one",
+        "Comments": "Modified comment for Genomic Alterations"
+     },
+     "Chronicle_genomic_alterations_data3":{
+       "Report Result Date": "Sep 12, 2017",
+       "Specimen Collection Date": "Sep 08, 2017",
+       "Sample Type": "Primary",
+       "Test Name": "Caris",
+       "Test Type": "Caris AMG",
+       "Comments": "Comment for Genomic Alterations section 2"
+     },
+
+     "genomic_alterations_biomarkers_value1": {
+       "Biomarkers":"ALKBH1 Gain, ALKBH1 Loss"
+     },
+
+     "genomic_alterations_biomarkers_value2": {
+       "Biomarkers":"PTENP1 Gain, FOXN1 Gain"
+     },
+      "genomic_alterations_biomarkers_value3": {
+            "Biomarkers": "PTENP1 Gain, FOXN1 Gain, BRAF Gain"
+      },
+
+     "Biomarkers": {
+       "Biomarkers1":"ALKBH1 Gain, ALKBH1 Loss",
+       "Biomarkers2":"PTENP1 Gain, FOXN1 Gain",
+       "Biomarkers3": "PTENP1 Gain, FOXN1 Gain, BRAF Gain"
+        },
+
+      "date1": "<now>",
+      "date2": "Aug 29, 2018",
+      "date3": "Aug 11, 2018",
+      "date4": "Sep 10, 2017",
+      "date5": "Sep 20, 2011",
+      "date6": "Jul 20, 2013",
+      "tooltip_text":"No data available for this patient",
+
+      "Chronicle_programManagement_no_data": {
+        "Subject ID":"",
+        "Consent Status": "Select...",
+        "Did NGS test results impact treatment planning for the patient?": "Select...",
+        "NGS test results impact - Other":"",
+        "Additional areas impacted by NGS test results - Other":"",
+        "Are there additional areas impacted by NGS test results?": "Select...",
+        "Are there any issues and concerns raised?": "Select...",
+        "Comments": ""
+      },
+     "Chronicle_programManagement_data1": {
+        "Consent Status": "Consented",
+        "NGS test results impact - Other": "New NGS test results impact",
+        "Are there additional areas impacted by NGS test results?": "Screening",
+        "Are there any issues and concerns raised?": "Report interpretation",
+        "Comments": "Comment not for saving"
+      },
+     "Chronicle_programManagement_data_to_fill_all_fields": {
+        "Subject ID": "12367 78astrg-567!",
+        "Consent Status": "Consented",
+        "Did NGS test results impact treatment planning for the patient?": "Yes - Treatment stopped",
+        "NGS test results impact - Other": "New NGS test results impact",
+        "Are there additional areas impacted by NGS test results?": "Screening",
+        "Additional areas impacted by NGS test results - Other": "New areas impacted by NGS Test Results",
+        "Are there any issues and concerns raised?": "Report interpretation",
+        "Comments": "Comment for Program Management"
+      },
+     "Chronicle_programManagement_data_to_change_all_fields": {
+       "Subject ID": "ABC/12-2345678910defghijklmnoprstqwuvz",
+       "Consent Status": "Declined",
+       "Did NGS test results impact treatment planning for the patient?": "Yes - No treatment given",
+       "NGS test results impact - Other": "Modified - NGS test results impact",
+       "Are there additional areas impacted by NGS test results?": "Prevention",
+       "Additional areas impacted by NGS test results - Other": "Modified - Areas impacted by NGS Test Results",
+       "Are there any issues and concerns raised?": "Panel result not timely",
+       "Comments": "Modified comment for Program Management"
+     },
+      "Chronicle_programManagement_data_with_multiple_didNgsImpactTreatment": {
+        "Subject ID": "12367 78astrg-567!",
+        "Consent Status": "Consented",
+        "Did NGS test results impact treatment planning for the patient?": "Yes - Treatment stopped, Yes - Treatment switched/added, No - No actionable information reported, No - Patient refused treatment plan",
+        "NGS test results impact - Other": "New NGS test results impact",
+        "Are there additional areas impacted by NGS test results?": "Screening",
+        "Additional areas impacted by NGS test results - Other": "New areas impacted by NGS Test Results",
+        "Are there any issues and concerns raised?": "Report interpretation",
+        "Comments": "Comment for Program Management"
+      },
+      "Chronicle_programManagement_data_toChange_multiple_didNgsImpactTreatment": {
+        "Subject ID": "12367 78astrg-567!",
+        "Consent Status": "Consented",
+        "Did NGS test results impact treatment planning for the patient?": "Yes - Enrolled in a clinical trial, Yes - Treatment switched/added, No - Not enough evidence to change plan, No - Patient refused treatment plan",
+        "NGS test results impact - Other": "New NGS test results impact",
+        "Are there additional areas impacted by NGS test results?": "Screening",
+        "Additional areas impacted by NGS test results - Other": "New areas impacted by NGS Test Results",
+        "Are there any issues and concerns raised?": "Report interpretation",
+        "Comments": "Comment for Program Management"
+      },
+     "Chronicle_programManagement_data_remove_multiple_didNgsImpactTreatment": {
+       "Subject ID": "12367 78astrg-567!",
+       "Consent Status": "Consented",
+       "Did NGS test results impact treatment planning for the patient?": "No - No actionable information reported",
+       "NGS test results impact - Other": "New NGS test results impact",
+       "Are there additional areas impacted by NGS test results?": "Screening",
+       "Additional areas impacted by NGS test results - Other": "New areas impacted by NGS Test Results",
+       "Are there any issues and concerns raised?": "Report interpretation",
+       "Comments": "Comment for Program Management"
+      },
+     "programManagement__didNgsImpactTreatment__data1" : "Yes - Treatment switched/added",
+      "programManagement__didNgsImpactTreatment__data2" : "No - No actionable information reported",
+      "programManagement__didNgsImpactTreatment__data3" : "No - Patient refused treatment plan",
+      "programManagement__didNgsImpactTreatment__data4" : "Yes - Enrolled in a clinical trial",
+      "programManagement__didNgsImpactTreatment__data5" : "No - Not enough evidence to change plan",
+
+      "programManagement__didNgsImpactTreatment_data_verification1": {
+        "Did NGS test results impact treatment planning for the patient?": "Yes - Treatment switched/added, No - No actionable information reported, No - Patient refused treatment plan"
+      },
+
+      "programManagement__didNgsImpactTreatment_data_verification2": {
+       "Did NGS test results impact treatment planning for the patient?": "No - No actionable information reported, No - Patient refused treatment plan"
+      },
+      "programManagement__didNgsImpactTreatment_data_verification3": {
+        "Did NGS test results impact treatment planning for the patient?": "No - No actionable information reported"
+      },
+     "Chronicle_Cancer_Diagnosis_data1": {
+       "Diagnosis Date": "May 02, 2010",
+       "Primary Site": "Breast",
+       "Histology": "Carcinoma:Transitional cell carcinoma",
+       "Tumor type (Oncotree)": "Pheochromocytoma (PHC)",
+       "Tumor size (mm)": "1",
+       "cT": "T1b",
+       "cN": "cN2",
+       "cM": "M1a",
+       "Clinical stage group": "IIA1",
+       "pT": "pT2c",
+       "pN": "N0(mol+)",
+       "pM": "M1e",
+       "Pathologic stage group": "IIIA"
+     },
+     "Chronicle_Cancer_Diagnosis_data2": {
+       "Diagnosis Date": "Jun 11, 2010",
+       "Primary Site": "Skin",
+       "Histology": "Adenocarcinoma, acinar predominant",
+       "Tumor type (Oncotree)": "Bladder Adenocarcinoma (BLAD)",
+       "Tumor size (mm)": "5",
+       "cT": "T1a2",
+       "cN": "cNX",
+       "cM": "M1 NOS",
+       "Clinical stage group": "IB2",
+       "pT": "pT3b",
+       "pN": "N0a (biopsy)",
+       "pM": "M1c",
+       "Pathologic stage group": "IIA1",
+       "AJCC staging version": "4",
+       "Distant metastasis or recurrence sites": "Other Digestive Organs and Spleen",
+       "Comments": "New comment for 1st section"
+     },
+     "Chronicle_Cancer_Diagnosis_data3": {
+       "Diagnosis Date": "Jun 11, 2010",
+       "Primary Site": "Skin",
+       "Histology": "Adenocarcinoma, acinar predominant",
+       "Tumor type (Oncotree)": "Bladder Adenocarcinoma (BLAD)",
+       "Tumor size (mm)": "5"
+     },
+     "Chronicle_Cancer_Diagnosis_data4": {
+       "Diagnosis Date": "Sep 04, 2010",
+       "Primary Site": "Bone",
+       "Histology": "Carcinoma in situ",
+       "Tumor type (Oncotree)": "Cholangiocarcinoma (CHOL)",
+       "Tumor size (mm)": "5",
+       "cT": "T4d",
+       "cN": "cN3",
+       "cM": "M1c",
+       "Clinical stage group": "IVA1",
+       "pT": "pT3b",
+       "pN": "N2b",
+       "pM": "MX",
+       "Pathologic stage group": "IVC",
+       "AJCC staging version": "8",
+       "Distant metastasis or recurrence sites": "Intrathoracic Lymph Nodes",
+       "Comments": "New comment for 2nd section"
+     },
+     "Chronicle_Cancer_Diagnosis_data5": {
+       "Diagnosis Date": "May 02, 2010",
+         "Primary Site": "Breast",
+         "Histology": "Carcinoma:Transitional cell carcinoma",
+         "Tumor type (Oncotree)": "Pheochromocytoma (PHC)",
+         "Tumor size (mm)": "1",
+         "cT": "T1b",
+         "cN": "cN2",
+         "cM": "M1a",
+         "Clinical stage group": "IIA1",
+         "pT": "pT2c",
+         "pN": "N0(mol+)",
+         "pM": "M1e",
+         "Pathologic stage group": "IVC",
+         "AJCC staging version": "5",
+         "Comments": "Modified comment for 1st section"
+     },
+     "Cancer_Diagnosis_Distant_metastasis_value1": "Intrathoracic Lymph Nodes",
+     "Cancer_Diagnosis_Distant_metastasis_value2": "Large Intestine and Rectum",
+     "Cancer_Diagnosis_Distant_metastasis_value3": "Brain and Spinal Cord",
+
+     "Cancer_Diagnosis_Distant_metastasis_data1": {
+       "Distant metastasis or recurrence sites": "Other Digestive Organs and Spleen, Intrathoracic Lymph Nodes, Large Intestine and Rectum"
+     },
+
+      "Cancer_Diagnosis_Distant_metastasis_data2": {
+       "Distant metastasis or recurrence sites": "Brain and Spinal Cord"
+     },
+
+      "Chronicle_Radiation_data1": {
+        "RadOnc modality name": "Radiation1",
+        "Purpose of radiation treatment": "Curative",
+        "Region treated": "regionTreated1",
+        "RadOnc fraction": "radOncFraction1",
+        "RadOnc total dose administered": "adOncTotalDoseAdmin1",
+        "RadOnc start date": "Sep 10, 2017",
+        "RadOnc end date": "Sep 12, 2017",
+        "RadOnc site type": "radOncSiteType1",
+        "RadOnc body type": "radOncBodyType1",
+        "Comments": "Comment  1 for Radiation"
+      },
+     "Chronicle_Radiation_data_to_modify": {
+        "RadOnc modality name": "Radiation2",
+        "Purpose of radiation treatment": "Palliative",
+        "Region treated": "regionTreated2",
+        "RadOnc fraction": "radOncFraction2",
+        "RadOnc total dose administered": "adOncTotalDoseAdmin2",
+        "RadOnc start date": "Sep 20, 2017",
+        "RadOnc end date": "Sep 22, 2017",
+        "RadOnc site type": "radOncSiteType2",
+        "RadOnc body type": "radOncBodyType2",
+        "Comments": "Modified comment for Radiation"
+     },
+      "Chronicle_Radiation_data3": {
+        "RadOnc modality name": "Radiation3",
+        "Purpose of radiation treatment": "Curative",
+        "Region treated": "regionTreated3",
+        "RadOnc fraction": "radOncFraction3",
+        "RadOnc total dose administered": "adOncTotalDoseAdmin3",
+        "RadOnc start date": "Sep 10, 2017",
+        "RadOnc end date": "Sep 12, 2017",
+        "RadOnc site type": "radOncSiteType3",
+        "RadOnc body type": "radOncBodyType3",
+        "Comments": "Comment for Radiation section 2"
+      },
+     "Chronicle_Radiation_no_data": {
+       "RadOnc modality name": "",
+       "Purpose of radiation treatment": "Select...",
+       "Region treated": "",
+       "RadOnc fraction": "",
+       "RadOnc total dose administered": "",
+       "RadOnc start date": "",
+       "RadOnc end date": "",
+       "RadOnc site type": "",
+       "RadOnc body type": "",
+       "Comments": ""
+      },
+    "vocab_for_geonomic_alterations":{
+      "sampleType": "Sample_type.csv"
+    },
+     "vocab_for_systemic_therapy":{
+       "regimen": "Regimen.csv",
+       "agentOrDrug": "AgentDrug.csv",
+       "bestResponse": "Best_response.csv",
+       "toxiCategory": "Toxi_category.csv"
+     },
+     "vocab_for_Surgery_and_Radiation":{
+                                       "treatmentOutcome": "Local_treatment_outcome.csv"
+                                   },
+     "vocab_for_cancerDiagnoses":{
+                                           "primarySite": "Primary_Site.csv",
+                                           "histology": "Histology.csv",
+                                           "tumorType": "Oncotree.csv",
+                                           "cT": "cT.csv",
+                                           "cN": "cN.csv",
+                                           "cM": "cM.csv",
+                                           "cStageGroup": "StageGroup.csv",
+                                           "pT": "pT.csv",
+                                           "pN": "pN.csv",
+                                           "pM": "pM.csv",
+                                           "pStageGroup": "PathStageGroup.csv",
+                                           "distantMetastasis": "Distant_Metastatic_Sites.csv"
+                                       }
+
+   },
+   "mtb_create_case_data" :
+{
+    "Meeting_Date": "Apr 22, 2022",
+    "Diagnosis_Date": "Mar 09, 2018",
+    "Primary_Oncologist": "test_oncologist",
+    "Histology": "Acute myeloid leukemia and related neoplasms",
+    "case_Narrative": "adding_a_sample_sentence_to_casenarrative_text",
+    "random_meeting_notes": "This is sample meeting note \n This is just fot testing it\n to check how it looks",
+    "disallowed_characters": "~ `",
+    "Meeting_summary": "",
+    "Recommendations_Summary": "adding_a_sample_sentence_to_recommendation_summary_text",
+    "Edit_Recommendations_Summary": "Editing_a_sample_sentence_to_edit_recommendation_summary_text",
+    "Recommendations_Summary_with_special_characters": "-  ( ) '' , .@",
+    "text_with_200_character": "200 characters can create a large number of words or a small number of words, depending on what you want to do with it.The longest word in the English language is : antidisestablishmentarianism.It isa",
+    "text_with_more_than_200_character": "200 characters can create a large number of words or a small number of words, depending on what you want to do with it.The longest word in the English language is : antidisestablishmentarianism.It isa 28 characters long",
+    "meeting_notes_11_rows": "This \nis sample\n meeting\n note \n This is \njust fot\n testing\n it\n to check\n how \nit \nlooks",
+    "notes_data1": "Test Notes1",
+    "notes_data2": "Test Notes2",
+    "description_data1": "description1 for the recommendation",
+    "description_data2": "description2 for the recommendation",
+    "patient_name": "aa",
+    "Special_chars": "~`@#$^{}|",
+    "acceptable_special_chars": "'-",
+    "Recommendation_notes_single_line" : "Hello World",
+    "Recommendation_notes_multi_line" : "Hello \n World \n Earth is \n Beautiful \n and \n there is \n peace and stay happy"
+
+}
+}

@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+main() {
+  local executable="${TESTS}/qa_automation_drt_haw.py"
+# mandatory variable to be pased is test environment and  test type
+    local test_type="${1?Test Type : ui or api expected}"
+# optional variable for the specific set to tests to be executed
+# / is added based iff the optional arg is passed
+    local test_env="${2:+${2}}"
+    local test="${3:+${3}}"
+    local test_suite="${4:+${4}}"
+
+    if [ -z "${test_env}" ]
+    then
+        test_env="dev"
+    fi
+    echo "test_type: $test_type"
+    echo "Test: $test"
+    echo python "${executable}" --component="${test}" --type="${test_type}" --suite="${test_suite}" --env="${test_env}"
+
+# the command to execute the tests
+#    exec pytest "${TESTS}/${test_type}/qa_tests/${test}"
+#    echo "NOT RUNNING NORMAL PYTEST"
+#    exec python -m pytest -n 6 --dist=loadscope -rsx -s -v --env=dev --assert=plain --alluredir=allure_result_folder --junitxml=junit_report/junit_report.xml qa_automation_drt_haw/api/qa_tests/minerva-service/
+
+    if [ -z "${test}" ] && [ -z "${test_suite}" ]
+    then
+          exec python "${executable}" --type="${test_type}" --env="${test_env}"
+    elif [ ! -z "${test}" ] && [ -z "${test_suite}" ]
+    then
+          exec python "${executable}" --type="${test_type}" --env="${test_env}" --component="${test}"
+    else
+          exec python "${executable}" --type="${test_type}" --env="${test_env}" --component="${test}" --suite="${test_suite}"
+    fi
+}
+
+main "$@"

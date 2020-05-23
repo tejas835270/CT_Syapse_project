@@ -1,0 +1,4 @@
+sr,username,password,org,patient_count
+1,tableau_hfhs_username,tableau_hfhs_password,"hfhs-sqa/views/ProgramInsights/Adoption?:embed=y#1","1,217"
+2,tableau_aurora_username,tableau_aurora_password,"aurora-sqa/views/ProgramInsights/Adoption?:embed=y#1","1,265"
+3,tableau_pma_username,tableau_pma_password,"pma-sqa/views/ProgramInsights/Adoption?:embed=y#1","2,293"

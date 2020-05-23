@@ -1,0 +1,56 @@
+#!/usr/bin/env groovy
+
+pipeline {
+  options {
+    timeout(time: 4, unit: 'HOURS')
+    buildDiscarder(logRotator(numToKeepStr: '30'))
+  }
+  agent {
+    kubernetes {
+        cloud "kubernetes"
+        defaultContainer 'jnlp'
+        label "qahaw-$environment"
+        yaml """
+          apiVersion: v1
+          kind: Pod
+          metadata:
+            annotations:
+              iam.amazonaws.com/role: jenkins
+          spec:
+            serviceAccountName: jenkins-qa
+            containers:
+
+            - name: qa-automation-drt-haw
+              image: 141380700111.dkr.ecr.us-west-2.amazonaws.com/qa-automation-drt-haw:latest
+              imagePullPolicy: Always
+              command:
+              - cat
+              tty: true
+            """
+    }
+  }
+
+  environment {
+    AWS_REGION='us-west-2'
+    CREDENTIALS_SQA=credentials('qa-automation-drt-haw-sqa')
+  }
+
+  stages {
+    stage('Run Tests') {
+      steps {
+        container('qa-automation-drt-haw') {
+        sh """#!/bin/bash
+        set -uo pipefail
+        echo $environment
+        echo $TESTTYPE
+        echo "Start Execution in "$pwd
+        runner $TESTTYPE $environment $component
+        """
+      }
+      publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'qa_reports', reportFiles: '*.html', reportName: 'HTML Report', reportTitles: ''])
+      archiveArtifacts artifacts: 'qa_reports/', fingerprint: true
+    }
+   }
+  }
+
+}

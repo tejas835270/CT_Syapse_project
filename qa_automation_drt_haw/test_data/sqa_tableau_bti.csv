@@ -1,0 +1,4 @@
+sr,username,password,org,patient_count
+1,tableau_pma_username,tableau_pma_password,"pma-sqa/views/BiomarkerTestingInsights/TestingTrends?:embed=y#1","2,510"
+2,tableau_hfhs_username,tableau_hfhs_password,"hfhs-sqa/views/BiomarkerTestingInsights/TestingTrends?:embed=y#1","2,955"
+3,tableau_aurora_username,tableau_aurora_password,"aurora-sqa/views/BiomarkerTestingInsights/TestingTrends?:embed=y#1","4,416"
